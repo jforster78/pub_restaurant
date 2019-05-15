@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset = "utf-8">
+  <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+  <title>The Farmhouse</title>
+  <link rel = "stylesheet" type = "text/css" href = "styles/style.css" /> 
+</head>
+
+<body id = "startup">
+
+  <button id = "tttBtn" title = "Back to the top">&#8679;</button>
+
+  <div id = "loader"></div>
+  <div id = "load" class = "animate-bottom"><!-- Animation container -->
+
+  <header>
+    <h1>The Farmhouse</h1>
+    <h4 id = "display" ><span>Good Day</span></h4>
+    <div><!-- image slide-show -->
+      <img id = "slide" src = "images/image1.jpg" alt = "Slideshow of food & drink" />
+    </div><!-- image slide-show end -->
+  </header>
+
+  <div class = "content"><!-- Content width -->
+
+  <nav class = "nav" id = "myNav">
+    <a href = "index.html">Home</a>
+    <a href = "food.html">Food Menu</a>
+    <a href = "drink.html">Drinks Menu</a>
+    <a href = "book.html">Book a Table</a>
+    <a href = "about.html">About Us</a>
+    <a id = "mobNav" href = "javascript:void(0);" class = "icon" ">&#9776;</a>
+  </nav>
+
+  <main>
+    <section class = "col-3 col-m-3"><!-- Introduction -->
+      <h2>Food Menu</h2>
+      <p class = "opener">Choose from our mouth water menus of Starters, Mains and Desserts for great tasting traditional British food.</p>
+    </section><!-- Introduction end -->
+
+    <section class = "col-3 col-m-3"><!-- Starters -->
+      <h2>Starters</h2>
+      <table class = "menu">
+        <tr>
+          <th colspan = "3"><hr /></th>
+        </tr>
+        <tr>
+          <td>Soup of the Day</td>
+          <td class = "small">Served with a bun and butter. Ask for todays choice.</td>
+          <td class = "cost">£3.50</td>
+        </tr>
+        <tr>
+          <td>Crispy Chicken Strips</td>
+          <td class = "small">Served with BBQ sauce and salad garnish.</td>
+          <td class = "cost">£4.50</td>
+        </tr>
+        <tr>
+          <td>Chicken Wings</td>
+          <td class = "small">Served with BBQ sauce or TABASCO sauce.</td>
+          <td class = "cost">£4.70</td>
+        </tr>
+        <tr>
+          <td>Breaded Garlic Mushrooms</td>
+          <td class = "small">Served with BBQ sauce and salad garnish.</td>
+          <td class = "cost">£3.99</td>
+        </tr>
+        <tr>
+          <td>Breaded Calamari</td>
+          <td class = "small">Large breaded squid rings served with a sweet chilli sauce.</td>
+          <td class = "cost">£4.70</td>
+        </tr>
+        <tr>
+          <td>Nachos</td>
+          <td class = "small">Tortilla chips layered with nacho cheese sauce, tangy salsa, jalapenos and sour cream.</td>
+          <td class = "cost">£3.99</td>
+        </tr>
+        <tr>
+          <th colspan = "3"><hr /></th>
+        </tr>
+      </table>
+    </section><!-- Starters end -->
+
+    <section class = "col-3 col-m-3"><!-- Mains -->
+      <h2>Mains</h2>
+      <table class = "menu">
+        <tr>
+          <th colspan = "3">Burgers<hr /></th>
+        </tr>
+        <tr>
+          <td>New Yorker Burger</td>
+          <td class = "small">Beef burger topped with gherkin, cheesy melt, slice of pastrami with burger sauce.</td>
+          <td class = "cost">£9.99</td>
+        </tr>
+        <tr>
+          <td>Classic Burger</td>
+          <td class = "small">Beef burger with pulled pork and BBQ sauce.</td>
+          <td class = "cost">£7.99</td>
+        </tr>
+        <tr>
+          <td>Cheese & Bacon Burger</td>
+          <td class = "small">Beef burger with cheddar cheese, smoked bacon and burger sauce.</td>
+          <td class = "cost">£8.99</td>
+        </tr>
+        <tr>
+          <td>Chicken Burger</td>
+          <td class = "small">With mayonnaise.</td>
+          <td class = "cost">£7.99</td>
+        </tr>
+        <tr>
+          <th colspan = "3"></th>
+        </tr>
+        <tr>
+          <th colspan = "3">Steaks<hr /></th>
+        </tr>
+        <tr>
+          <td>8oz Rump</td>
+          <td class = "small">Served potato wedges or fries, half a grilled tomato and onion rings.</td>
+          <td class = "cost">£10.99</td>
+        </tr>
+        <tr>
+          <td>8oz Sirloin</td>
+          <td class = "small">Served potato wedges or fries, half a grilled tomato and onion rings.</td>
+          <td class = "cost">£12.99</td>
+        </tr>
+        <tr>
+          <td>10oz Rib-eye</td>
+          <td class = "small">Served potato wedges or fries, half a grilled tomato and onion rings.</td>
+          <td class = "cost">£13.99</td>
+        </tr>
+        <tr>
+          <th colspan = "3"></th>
+        </tr>
+        <tr>
+          <th colspan = "3">Classics<hr /></th>
+        </tr>
+        <tr>
+          <td>Cod & Chips</td>
+          <td class = "small">Cod fillet, hand battered.  Served with chips, mushy peas or peas and tartare sauce.</td>
+          <td class = "cost">£9.50</td>
+        </tr>
+        <tr>
+          <td>Scampi & Chips</td>
+          <td class = "small">Served with chips, mushy peas or peas and tartare sauce.</td>
+          <td class = "cost">£8.50</td>
+        </tr>
+        <tr>
+          <td>Beef & Ale Pie</td>
+          <td class = "small">Made with chunks of beef and a rich Ale gravy. Served with mash potato ad seasonal veg.</td>
+          <td class = "cost">£8.99</td>
+        </tr>
+        <tr>
+          <td>Sausage & Mash</td>
+          <td class = "small">Three pork sausages served with mashed potato, peas ad gravy.</td>
+          <td class = "cost">£7.99</td>
+        </tr>
+        <tr>
+          <td>Gammon & Eggs</td>
+          <td class = "small">Thick slice of gammon steak served with chips, peas and two fried eggs.</td>
+          <td class = "cost">£8.99</td>
+        </tr>
+        <tr>
+          <td>Chicken Tikka Massala</td>
+          <td class = "small">Chicken breast in a medium-spiced masala sauce. Served with naan bread and rice.</td>
+          <td class = "cost">£8.99</td>
+        </tr>
+        <tr>
+          <th colspan = "3"><hr /></th>
+        </tr>
+      </table>
+    </section><!-- Mains end -->
+
+    <section class = "col-3 col-m-3"><!-- Desserts -->
+      <h2>Desserts</h2>
+      <table class = "menu">
+        <tr>
+          <th colspan = "3"><hr /></th>
+        </tr>
+        <tr>
+          <td>Chocolate Brownie</td>
+          <td class = "small">Served warm with vanilla flavoured ice cream.</td>
+          <td class = "cost">£4.50</td>
+        </tr>
+        <tr>
+          <td> Caramel Cheesecake</td>
+          <td class = "small">Served with chocolate flavoured sauce and vanilla flavoured ice cream.</td>
+          <td class = "cost">£4.99</td>
+        </tr>
+        <tr>
+          <td>Apple Pie</td>
+          <td class = "small">Served with custard or vanilla ice cream.</td>
+          <td class = "cost">£3.99</td>
+        </tr>
+        <tr>
+          <td>Chocolate Fudge Cake</td>
+          <td class = "small">Served warm with vanilla flavoured ice cream.</td>
+          <td class = "cost">£3.99</td>
+        </tr>
+        <tr>
+          <td>Strawberry Sundae</td>
+          <td class = "small">Vanilla flavoured ice cream with strawberries and sauce, topped with cream and nut sprinkle.</td>
+          <td class = "cost">£4.99</td>
+        </tr>
+        <tr>
+          <th colspan = "3"><hr /></th>
+        </tr>
+      </table>
+    </section><!-- Desserts end -->
+  </main>
+
+  </div><!-- Content width end -->
+
+  <footer>
+    <a href = ""><small>Copyright &#9400; 2018</small></a> |
+    <a href = ""><small>Terms & Conditions</small></a> |
+    <a href = "about.html"><small>About Us</small></a>
+  </footer>
+
+  <script async src = "scripts/scripts.js"></script>
+
+  </div><!-- Animation container end -->
+
+</body>
+
+</html>

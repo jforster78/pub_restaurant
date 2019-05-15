@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset = "utf-8">
+  <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+  <title>The Farmhouse</title>
+  <link rel = "stylesheet" type = "text/css" href = "styles/style.css" />
+</head>
+
+<body id = "startup">
+
+  <button id = "tttBtn" title = "Back to the top">&#8679;</button>
+
+  <div id = "loader"></div>
+  <div id = "load" class = "animate-bottom"><!-- Animation container -->
+
+  <header>
+    <h1>The Farmhouse</h1>
+    <h4 id = "display" ><span>Good Day</span></h4>
+    <div><!-- image slide-show -->
+      <img id = "slide" src = "images/image1.jpg" alt = "Slideshow of food & drink" />
+    </div><!-- image slide-show end -->
+  </header>
+
+  <div class = "content"><!-- Content width -->
+
+  <nav class = "nav" id = "myNav">
+    <a href = "index.html">Home</a>
+    <a href = "food.html">Food Menu</a>
+    <a href = "drink.html">Drinks Menu</a>
+    <a href = "book.html">Book a Table</a>
+    <a href = "about.html">About Us</a>
+    <a id = "mobNav" href = "javascript:void(0);" class = "icon">&#9776;</a>
+  </nav>
+
+  <main>
+    <section class = "order1 col-3 col-m-3" ><!-- About Us -->
+      <h2>About Us</h2>
+      <p class = "opener">Relax in a comfortable and homely atmosphere, whilst enjoying lunch or dinner chosen from our traditional British pub menu.
+      Our innovative dishes are mouth watering. With carefully selected, high quality, fresh, regional produce, 
+      food is available throughout the day from 12.00 noon to 9.30pm and Sundays 12pm to 8pm. 
+      Our home cooked dishes are perfectly complimented by our well considered beers and wine list, offering all our visitors plenty of choice.</p>
+    </section><!-- About Us end -->
+
+    <section class = "order2 col-1 col-m-1">
+      <h3>We Open</h3><!-- Open times -->
+      <table class = "open">
+        <tr>
+          <th>Mon</th>
+          <td>11:00am</td>
+          <td>-</td>
+          <td>12:00pm</td>
+        </tr>
+        <tr>
+          <th>Tue</th>
+          <td>11:00am</td>
+          <td>-</td>
+          <td>12:00pm</td>
+        </tr>
+        <tr>
+          <th>Wed</th>
+          <td>11:00am</td> 
+          <td>-</td>
+          <td>12:00pm</td>
+        </tr>
+        <tr>
+          <th>Thu</th>
+          <td>11:00am</td>
+          <td>-</td>
+          <td>12:00pm</td>
+        </tr>
+        <tr>
+          <th>Fri</th>
+          <td>11:00am</td>
+          <td>-</td>
+          <td>12:00pm</td>
+        </tr>
+        <tr>
+          <th>Sat</th>
+          <td>11:00am</td>
+          <td>-</td>
+          <td>12:00pm</td>
+        </tr>
+        <tr>
+          <th>Sun</th>
+          <td>11:00am</td>
+          <td>-</td>
+          <td>12:00pm</td>
+        </tr>
+      </table><!-- Open times end -->
+
+      <br />
+
+      <h3>We Serve Food</h3><!-- Food times -->
+      <table class = "serve">
+        <tr>
+          <th>Mon</th>
+          <td>12:00am</td>
+          <td>-</td>
+          <td>09:30pm</td>
+        </tr>
+        <tr>
+          <th>Tue</th>
+          <td>12:00am</td>
+          <td>-</td>
+          <td>09:30pm</td>
+        </tr>
+        <tr>
+          <th>Wed</th>
+          <td>12:00am</td>
+          <td>-</td>
+          <td>09:30pm</td>
+        </tr>
+        <tr>
+          <th>Thu</th>
+          <td>12:00am</td>
+          <td>-</td>
+          <td>09:30pm</td>
+        </tr>
+        <tr>
+          <th>Fri</th>
+          <td>12:00am</td>
+          <td>-</td>
+          <td>09:30pm</td>
+        </tr>
+        <tr>
+          <th>Sat</th>
+          <td>12:00am</td>
+        <td>-</td>
+          <td>09:30pm</td>
+        </tr>
+        <tr>
+          <th>Sun</th>
+          <td>12:00am</td>
+          <td>-</td>
+          <td>08:00pm</td>
+        </tr>
+      </table><!-- Food times end -->
+      <br />
+    </section>
+
+    <section class = "order3 col-1 col-m-2"><!-- Events & facilities -->
+      <h3>Events</h3>
+      <p>We offer event days and night's.</p>
+      <ul>
+        <li>Quiz Night</li>
+        <li>Pool Tournaments</li>
+        <li>Darts Team</li>
+        <li>Cycle Club</li>
+        <li>Family Event Days</li>
+        <li>Summer BBQ's</li>
+      </ul>
+      
+      <h3 id="spacing">Facilities</h3>
+      <ul>
+        <li>Outside Terrace</li>
+        <li>Garden</li>
+        <li>Sky Sports</li>
+        <li>Log Fire</li>
+        <li>Car Park</li>
+        <li>Child Friendly</li>
+        <li>Disabled Facilities</li>
+      </ul>
+    </section><!-- Events & facilities end -->
+
+    <section class = "order4 col-1 col-m-3"><!-- Google Map -->
+      <h3>How to find us</h3>
+      <div id = "map"></div>
+      <ul>
+        <li>The Farmhouse</li>
+        <li>Hilltop</li>
+        <li>Northumberland</li>
+        <li>NE65 7QA</li>
+        <li>0191 555 5555</li>
+      </ul>
+      <p>Opening times are subject to change on Bank Holidays and Christmas.</p>
+    </section><!-- Google Map end-->
+  </main>
+
+  </div><!-- Content width end -->
+
+  <footer>
+    <a href = ""><small>Copyright &#9400; 2018</small></a> |
+    <a href = ""><small>Terms & Conditions</small></a> |
+    <a href = "about.html"><small>About Us</small></a>
+  </footer>
+
+  <script async src = "scripts/scripts.js" ></script>	
+
+  </div><!-- Animation container end -->
+
+</body>
+
+</html>

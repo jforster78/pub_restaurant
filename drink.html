@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset = "utf-8">
+  <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+  <title>The Farmhouse</title>
+  <link rel = "stylesheet" type = "text/css" href = "styles/style.css" />
+</head>
+
+<body id = "startup">
+
+  <button id = "tttBtn" title = "Back to the top">&#8679;</button>
+
+  <div id = "loader"></div>
+  <div id = "load" class = "animate-bottom"><!-- Animation container -->
+
+  <header>
+    <h1>The Farmhouse</h1>
+    <h4 id = "display" ><span>Good Day</span></h4>
+    <div><!-- image slide-show -->
+      <img id = "slide" src = "images/image1.jpg" alt = "Slideshow of food & drink" />
+    </div><!-- image slide-show end -->
+  </header>
+
+  <div class = "content"><!-- Content width -->
+
+  <nav class = "nav" id = "myNav">
+    <a href = "index.html">Home</a>
+    <a href = "food.html">Food Menu</a>
+    <a href = "drink.html">Drinks Menu</a>
+    <a href = "book.html">Book a Table</a>
+    <a href = "about.html">About Us</a>
+    <a id = "mobNav" href = "javascript:void(0);" class = "icon" ">&#9776;</a>
+  </nav> 
+
+  <main>
+    <section class = "col-3 col-m-3"><!-- Introduction -->
+      <h2>Drinks Menu</h2>
+      <p class = "opener">We have a arrange of soft drinks, beers and a good selection of wines to choose from.</p>
+    </section><!-- Introduction end -->
+
+    <section class = "col-1 col-m-1"><!-- Soft & Hot -->
+	    <h2>Soft & Hot</h2>
+	    <table class = "menu">
+        <tr>
+          <th colspan = "3">Soft Drinks<hr /></th>
+        </tr>
+        <tr>
+          <td>Coca Cola</td>
+          <td class = "small"></td>
+          <td class = "cost">£1.70</td>
+        </tr>
+        <tr>
+          <td>Fanta</td>
+          <td class = "small"></td>
+          <td class = "cost">£1.70</td>
+        </tr>
+        <tr>
+          <td>Sprite</td>
+          <td class = "small"></td>
+          <td class = "cost">£1.70</td>
+        </tr>
+        <tr>
+          <th colspan = "3"></th>
+        </tr>
+        <tr>
+          <th colspan = "3">Hot Drinks<hr /></th>
+        </tr>
+        <tr>
+          <td>Americano</td>
+          <td class = "small"></td>
+          <td class = "cost">£2.49</td>
+        </tr>
+        <tr>
+          <td>Latte</td>
+          <td class = "small"></td>
+          <td class = "cost">£2.80</td>
+        </tr>
+        <tr>
+          <td>Cappuccino</td>
+          <td class = "small"></td>
+          <td class = "cost">£2.80</td>
+        </tr>
+        <tr>
+          <td>Pot of Tea</td>
+          <td class = "small"></td>
+          <td class = "cost">£1.80</td>
+        </tr>
+      </table>		
+    </section><!-- Soft & Hot end -->
+	
+	  <section class = "col-1 col-m-1"><!-- Lagers & Beers -->
+	    <h2>Lagers & Beers</h2>
+	    <table class = "menu">
+        <tr>
+          <th colspan = "3">Draught Lager<hr /></th>
+        </tr>
+        <tr>
+          <td>Moretti</td>
+          <td class = "small"></td>
+          <td class = "cost">£3.70</td>
+        </tr>
+        <tr>
+          <td>Carling</td>
+          <td class = "small"></td>
+          <td class = "cost">£3.20</td>
+        </tr>
+        <tr>
+          <td>Amstel</td>
+          <td class = "small"></td>
+          <td class = "cost">£3.70</td>
+        </tr>
+        <tr>
+          <th colspan = "3"></th>
+        </tr>
+        <tr>
+          <th colspan = "3">Draught Beers<hr /></th>
+        </tr>
+        <tr>
+          <td>Ruddles</td>
+          <td class = "small"></td>
+          <td class = "cost">£2.20</td>
+        </tr>
+        <tr>
+          <td>Doombar</td>
+          <td class = "small"></td>
+          <td class = "cost">£2.20</td>
+        </tr>
+        <tr>
+          <td>Mordue</td>
+          <td class = "small"></td>
+          <td class = "cost">£2.70</td>
+        </tr>
+        <tr>
+          <td>Guiness</td>
+          <td class = "small"></td>
+          <td class = "cost">£3.70</td>
+        </tr>
+      </table>
+	  </section><!-- Lagers & Beers end -->
+	  
+    <section class = "col-1 col-m-1"><!-- Ciders -->
+      <h2>Ciders</h2>
+      <table class = "menu">
+        <tr>
+          <th colspan = "3">Draught<hr /></th>
+        </tr>
+        <tr>
+          <td>Strongbow</td>
+          <td class = "small"></td>
+          <td class = "cost">£3.70</td>
+        </tr>
+        <tr>
+          <td>Old Rosie</td>
+          <td class = "small"></td>
+          <td class = "cost">£3.70</td>
+        </tr>
+        <tr>
+          <td>Scrumpy</td>
+          <td class = "small"></td>
+          <td class = "cost">£3.70</td>
+        </tr>
+        <tr>
+          <th colspan = "3"></th>
+        </tr>
+        <tr>
+          <th colspan = "3">Bottled<hr /></th>
+        </tr>
+        <tr>
+          <td>Kopperberg</td>
+          <td class = "small"></td>
+          <td class = "cost">£4.10</td>
+        </tr>
+        <tr>
+          <td>Magners</td>
+          <td class = "small"></td>
+          <td class = "cost">£4.10</td>
+        </tr>
+        <tr>
+          <td>Bulmers</td>
+          <td class = "small"></td>
+          <td class = "cost">£4.10</td>
+        </tr>
+        <tr>
+          <td>Rekorderlig</td>
+          <td class = "small"></td>
+          <td class = "cost">£4.20</td>
+        </tr>
+      </table>
+    </section><!-- Ciders end -->
+
+	<section class = "col-3 col-m-3"><!-- Wines -->
+      <h2>Wine List</h2>
+      <table class = "menu">
+        <tr>
+          <th colspan = "3">Red Wine<hr /></th>
+        </tr>
+        <tr>
+          <td>Argentinian Melbec</td>
+          <td class = "small">175ml Glass £4.40, 250ml Glass £5.50</td>
+          <td class = "cost">Btl £15.00</td>
+        </tr>
+        <tr>
+          <td>South Africian Shiraz</td>
+          <td class = "small">175ml Glass £4.20, 250ml Glass £5.30</td>
+          <td class = "cost">Btl £12.50</td>
+        </tr>
+        <tr>
+          <td>Spanish Rioja</td>
+          <td class = "small">175ml Glass £4.40, 250ml Glass £5.50</td>
+          <td class = "cost">Btl £15.00</td>
+        </tr>
+        <tr>
+          <td>French Merlot</td>
+          <td class = "small">175ml Glass £4.30, 250ml Glass £5.40</td>
+          <td class = "cost">Btl £14.00</td>
+        </tr>
+        <tr>
+          <th colspan = "3"></th>
+        </tr>
+        <tr>
+          <th colspan = "3">White Wine<hr /></th>
+        </tr>
+        <tr>
+          <td>Chardonnay</td>
+          <td class = "small">175ml Glass £4.50, 250ml Glass £5.60</td>
+          <td class = "cost">Btl £17.00</td>
+        </tr>
+        <tr>
+          <td>Pinot Grigiot</td>
+          <td class = "small">175ml Glass £4.30, 250ml Glass £5.40</td>
+          <td class = "cost">Btl £14.00</td>
+        </tr>  
+        <tr>
+          <td>Sauvignon Blanc</td>
+          <td class = "small">175ml Glass £4.40, 250ml Glass £5.50</td>
+          <td class = "cost">Btl £15.00</td>
+        </tr> 
+        <tr>
+          <th colspan = "3"></th>
+        </tr>             
+        <tr>
+          <th colspan = "3">Sparkling<hr /></th>
+        </tr>
+        <tr>
+          <td>Presecco</td>
+          <td class = "small">175ml Glass £4.10, 250ml Glass £5.20</td>
+          <td class = "cost">Btl £12.00</td>
+        </tr>
+        <tr>
+          <td>Cava Brut</td>
+          <td class = "small">175ml Glass £4.30, 250ml Glass £5.40</td>
+          <td class = "cost">Btl £14.00</td>
+        </tr>
+        <tr>
+          <td>Classic Cuvee</td>
+          <td class = "small">175ml Glass £6.30, 250ml Glass £7.40</td>
+          <td class = "cost">Btl £22.00</td>
+        </tr>                        
+      </table>
+    </section><!-- Wines end -->
+  </main>
+
+  </div><!-- Content width end -->
+
+  <footer>
+    <a href = ""><small>Copyright &#9400; 2018</small></a> |
+    <a href = ""><small>Terms & Conditions</small></a> |
+    <a href = "about.html"><small>About Us</small></a>
+  </footer>
+
+  <script async src = "scripts/scripts.js"></script>
+
+  </div><!-- Animation container end -->  
+
+</body>
+
+</html>

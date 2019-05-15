@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset = "utf-8">
+  <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+  <title>The Farmhouse</title>
+  <link rel = "stylesheet" type = "text/css" href = "styles/style.css" />
+</head>
+
+<body id = "startup">
+
+  <button id = "tttBtn" title = "Back to the top">&#8679;</button>
+
+  <div id = "loader"></div>
+  <div id = "load" class = "animate-bottom"><!-- Animation container -->
+
+  <header>
+    <h1>The Farmhouse</h1>
+    <h4 id = "display" ><span>Good Day</span></h4>
+    <div><!-- image slide-show -->
+      <img id = "slide" src = "images/image1.jpg" alt = "Slideshow of food & drink" />
+    </div><!-- image slide-show end -->
+  </header>
+
+  <div class = "content"><!-- Content width -->
+
+  <nav class = "nav" id = "myNav">
+    <a href = "index.html">Home</a>
+    <a href = "food.html">Food Menu</a>
+    <a href = "drink.html">Drinks Menu</a>
+    <a href = "book.html">Book a Table</a>
+    <a href = "about.html">About Us</a>
+    <a id = "mobNav" href = "javascript:void(0);" class = "icon" ">&#9776;</a>
+  </nav>
+
+  <main>
+    <section class = "col-3 col-m-3"><!-- Introduction -->
+      <h2>Book a Table</h2>
+      <p class = "opener">Please fill out the on-line reservation form below.</p><!-- Introduction end -->
+
+      <form id = "bkForm"><!-- Booking form -->
+        <fieldset> 
+          <div>
+            <div class = "col-1 col-m-1">
+              <label for = "fName">First Name</label>
+            </div>
+            <div class = "col-2 col-m-2" >
+              <input type = "text" id = "fName" required placeholder = "First Name" autofocus />
+            </div>
+          </div>
+          <div>
+            <div class = "col-1 col-m-1">
+              <label for = "lName">Last Name</label>
+            </div>
+            <div class = "col-2 col-m-2">		  
+              <input type = "text" id = "lName" required placeholder = "Last Name" />
+            </div>
+          </div>
+          <div>
+            <div class = "col-1 col-m-1">
+              <label for = "email">Email Address</label>
+            </div>
+            <div class = "col-2 col-m-2">	
+              <input type = "email" id = "email" required placeholder = "Email Address" />
+            </div>
+          </div>
+          <div>
+            <div class = "col-1 col-m-1">
+              <label for = "phone">Mobile Number</label>
+            </div>
+            <div class = "col-2 col-m-2">	
+              <input type = "tel" id = "phone" pattern = "[0-9]{11}" required placeholder = "Mobile number" />
+            </div>
+          </div>
+          <div>
+            <div class = "col-1 col-m-1">
+              <label for = "date">Date</label>
+            </div>
+            <div class = "col-2 col-m-2">	
+              <input type = "date" id = "date" required />
+            </div>
+          </div>
+          <div>
+            <div class = "col-1 col-m-1">
+              <label for = "time">Time</label>
+            </div>
+            <div class = "col-2 col-m-2">	
+              <select id = "time" required>
+                <option label = "-- : --"></option>
+                <option value = "1200">12:00</option>
+                <option value = "1215">12:15</option>
+                <option value = "1230">12:30</option>
+                <option value = "1245">12:45</option>
+                <option value = "1300">13:00</option>
+                <option value = "1315">13:15</option>
+                <option value = "1330">13:30</option>
+                <option value = "1345">13:45</option>
+                <option value = "1400">14:00</option>
+                <option value = "1415">14:15</option>
+                <option value = "1430">14:30</option>
+                <option value = "1445">14:45</option>
+                <option value = "1500">15:00</option>
+                <option value = "1515">15:15</option>
+                <option value = "1530">15:30</option>
+                <option value = "1545">15:45</option>
+                <option value = "1600">16:00</option>
+                <option value = "1615">16:15</option>
+                <option value = "1630">16:30</option>
+                <option value = "1645">16:45</option>
+                <option value = "1700">17:00</option>
+                <option value = "1715">17:15</option>
+                <option value = "1730">17:30</option>
+                <option value = "1745">17:45</option>
+                <option value = "1800">18:00</option>
+                <option value = "1815">18:15</option>
+                <option value = "1830">18:30</option>
+                <option value = "1845">18:45</option>
+                <option value = "1900">19:00</option>
+                <option value = "1915">19:15</option>
+                <option value = "1930">19:30</option>
+                <option value = "1945">19:45</option>
+                <option value = "2000">20:00</option>
+                <option value = "2015">20:15</option>
+                <option value = "2030">20.30</option>
+                <option value = "2045">20:45</option>
+                <option value = "2100">21:00</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <div class = "col-1 col-m-1">
+              <label for = "message">Message (optional)</label>
+            </div>
+            <div class = "col-2 col-m-2">	
+              <textarea name = "message" id = "message" placeholder = "Message" rows = "7" cols = "60" maxlength = "150"></textarea>
+              <div id = "charactersLeft">150 characters</div><br />
+            </div>
+          </div>
+          <div>
+            <div class = "col-1 col-m-1"><span>space</span></div>
+            <div class = "col-2 col-m-2">	
+              <input type = "submit" name = "submit" id = "submit" value = "Submit" />
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </section><!-- Booking Form end-->
+  </main>
+
+  </div><!-- Content width end -->
+
+  <footer>
+    <a href = ""><small>Copyright &#9400; 2018</small></a> |
+    <a href = ""><small>Terms & Conditions</small></a> |
+    <a href = "about.html"><small>About Us</small></a>
+  </footer>
+
+  <script async src = "scripts/scripts.js" ></script>
+
+  </div><!-- Animation container end -->
+
+</body>
+
+</html>

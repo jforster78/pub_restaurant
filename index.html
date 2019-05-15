@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset = "utf-8">
+  <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+  <title>The Farmhouse</title>
+  <link rel = "stylesheet" type = "text/css" href = "styles/style.css" />
+</head>
+
+<body id = "startup">
+  
+  <button id = "tttBtn" title = "Back to the top">&#8679;</button>
+
+  <div id = "loader"></div>
+  <div id = "load" class = "animate-bottom"><!-- animation container -->
+
+  <header>
+    <h1>The Farmhouse</h1>
+    <h4 id = "display" ><span>Good Day</span></h4>
+    <div><!-- image slide-show -->
+      <img id = "slide" src = "images/image1.jpg" alt = "Slideshow of food & drink" />
+    </div><!-- image slide-show end -->
+  </header>
+
+  <div class = "content"><!-- Content width -->
+
+  <nav class = "nav" id = "myNav">
+    <a href = "index.html">Home</a>
+    <a href = "food.html">Food Menu</a>
+    <a href = "drink.html">Drinks Menu</a>
+    <a href = "book.html">Book a Table</a>
+    <a href = "about.html">About Us</a>
+    <a id = "mobNav" href = "javascript:void(0);" class = "icon">&#9776;</a>
+  </nav>
+
+  <main>
+    <section class = "col-3 col-m-3"><!-- Friendly introduction -->
+      <h2>The Farmhouse</h2>
+      <p class = "opener">At The Farmhouse you will find a warm friendly atmosphere, 
+      were friends and family's can enjoy a drink and relax.  
+      We offer a traditional Pub menu were you can find classics, such as the Farmhouse Beef Burger 
+      with Pulled Pork, our Homemade Steak and Ale Pie and our famous Fish and Chips.  
+      But do not stop there have a look at our selection of delicious desserts and coffees.  
+      In the winter months the Bar and Restaurant is warmed by log fires, whist taking in the atmosphere.</p> 
+    </section><!-- Friendly introduction end -->
+
+    <aside>
+      <div class = "col-1 col-m-1"><!-- Food menu -->
+        <div class = "choice">
+          <a href = "food.html"><img src = "images/fMenu.jpg" alt = "Knife and fork image link" title = "Food Menu" /></a>
+          <div class = "box">
+            <h4>Food Menu</h4>
+          </div>
+        </div>
+      </div><!-- Food menu end -->
+
+      <div class = "col-1 col-m-1"><!-- Drinks menu -->
+        <div class = "choice">
+          <a href = "drink.html"><img src = "images/dMenu.jpg" alt = "Drinks menu image link" title = "Drinks Menu" /></a>
+          <div class = "box">
+            <h4>Drinks Menu</h4>
+          </div>
+        </div>
+      </div><!-- Drinks menu end --> 
+
+      <div class = "col-1 col-m-1"><!-- Book a table -->
+        <div class = "choice">
+          <a href = "book.html"><img src = "images/book.jpg" alt = "book a table image link" title = "Book a Table" /></a>
+          <div class = "box">
+            <h4>Book a Table</h4>
+          </div>
+        </div>
+      </div><!-- Book a table end -->   
+    </aside>
+
+    <div class = "col-3 col-m-3"><!-- Newsletter form -->
+      <fieldset id = "signForm">
+        <form>
+          <p><strong id = "blink">Sign up!</strong> and receive promotional offers.</p>
+          <input type = "email" placeholder = "Email Address" required id = "eSign" />
+          <input type = "submit" value = "Submit" id = "submit2" />
+        </form>
+      </fieldset>
+    </div><!-- Newsletter form end-->
+  </main>
+
+  </div><!-- Content width end -->
+
+  <footer>
+    <a href = ""><small>Copyright &#9400; 2018</small></a> |
+    <a href = ""><small>Terms & Conditions</small></a> |
+    <a href = "about.html"><small>About Us</small></a>
+  </footer>
+
+  <script async src = "scripts/scripts.js"></script>
+
+  </div><!-- Animation container end -->
+
+</body>
+
+</html>

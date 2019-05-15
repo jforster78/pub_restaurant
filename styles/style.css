@@ -1,0 +1,421 @@
+/*  Main content */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 150%;
+  background-color: #f2f2f2;
+ }
+
+.content {
+  max-width: 1024px;
+  margin: auto;
+}
+
+p.opener {
+  margin-bottom: 50px;
+}
+
+span {
+  visibility: hidden;
+}
+/*  Main content end */
+
+ 
+/* Color Scheme */
+header, nav, h3, footer, nav a, footer a, div.box, fieldset, #submit, #submit2, #map {
+  background-color: #333;
+  color: #f2f2f2;
+  padding: 3px 0;
+}
+
+input, textarea, select, #map, .menu {
+  border: 1px solid #333;
+}
+
+.menu, .choice, fieldset, h3, nav {
+  box-shadow: 0 4px 8px 0 #000, 0 6px 20px 0 #000;
+}
+/* Color Scheme end */
+
+
+/* Headings */ 
+header {
+  padding: 10px 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Times New Roman', Times, serif;
+}
+/* Headings end */
+
+
+/* Navigation */
+.nav {
+  overflow: hidden;
+  padding: 10px 0;
+  margin: 0 15px 50px;
+}
+
+.nav a {
+  display: inline;
+  padding: 0 50px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.nav .icon {
+  display: none;
+}
+
+a.icon {
+  font-size: 15px;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 990px) {
+  .nav {
+    margin: 0 15px 50px;
+  }
+  .nav a {
+    display: none;
+  }
+  .nav a.icon {
+    float: right;
+    display: block;
+    text-decoration: none;
+  }
+  .nav.responsive {
+    position: relative;
+    margin: 0 15px 50px;
+  }
+  .nav.responsive .icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+	  padding: 10px 15px;
+  }
+}
+/* Navigation end*/
+
+
+/* Footer */
+a {
+  text-decoration: none;
+}
+
+footer {
+  float: left;
+  width: 100%;
+  margin-top: 50px;
+  padding: 25px 0;
+}
+/* Footer end */
+
+
+/* Homepage Image Links */
+.choice {
+  margin: 20px 0;
+}
+
+.box {
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.choice img:hover{
+  opacity: .6;
+}
+
+div img {
+  margin-bottom: -17px;
+  width: 100%;
+}
+/* Homepage Image Links end */
+
+
+/* Tables and lists */
+.open, .serve {
+  width: 100%;
+}
+
+.open th, .open td, .serve th, .serve td {
+  text-align: center;
+}
+
+#spacing {
+	margin-top: 33px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding-right: 30px;
+}
+/* Tables and lists end */
+
+
+/* Form */
+fieldset {
+  border: none;
+  margin: 30px 0;
+
+  padding: 20px 30px;
+  text-align: left;
+}
+
+label {
+  padding: 12px 12px 0 0;
+  display: inline-block;
+}
+
+input, textarea, select {
+  display: block;
+  width: 100%;
+  padding: 5px 5px;
+  margin: 10px 0;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+}
+
+input:focus, select:focus, textarea:focus { 
+  outline: none;
+  border-color: #fff;
+  box-shadow: 0 0 10px #fff;
+  background-color: #fff;
+}
+
+select {
+  width: 50%;
+}
+
+::-webkit-input-placeholder {
+  color: #333;
+}
+
+:-ms-input-placeholder {
+  color: #333;
+}
+
+#submit {
+  float: right;
+}
+
+#submit:hover, #submit2:hover {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+#submit2 {
+  margin: 15px auto;
+}
+
+#submit, #submit2 {
+  padding: 10px 0;
+  cursor: pointer;
+  font-size: 12px;
+  width: 15%;
+  border: 2px solid #f2f2f2;
+}
+
+#signForm p {
+  text-align: center;
+}
+
+#eSign {
+  width: 40%;
+  margin: 0 auto;
+}
+
+#charactersLeft {
+	float: left;
+	font-size: 10px;
+}
+/* Form end */
+
+
+/* Google Maps */
+#map {
+  margin: 30px 0;
+  width: 100%;
+  height: 200px;
+}
+/* Google Maps end*/
+
+
+/* Menus */
+.menu {
+  border-spacing: 20px;
+  background-color: #fff;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+td, th {
+  text-align: left;
+}
+.small {
+  font-size: 10px;
+}
+
+.cost {
+  text-align: right;
+}
+/* Menus end*/
+
+
+/* Animated loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  margin: -75px 0 0 -35px;
+  border: 10px solid #f2f2f2;
+  border-radius: 50%;
+  border-bottom: 10px solid #333;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { opacity: 0 } 
+  to { opacity: 1 }
+}
+
+@keyframes animatebottom { 
+  from{ opacity: 0 } 
+  to{ opacity: 1 }
+}
+/* Animated loader end */
+
+
+/* Back to the top button */
+#tttBtn {
+  display: none;
+  position: fixed;
+  bottom: 110px;
+  right: 0;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #333;
+  color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  cursor: pointer;
+  padding: 8px 13px;
+  font-size: 20px;
+}
+
+#tttBtn:hover {
+  background-color: #f2f2f2;
+  color: #333;
+  border: 1px solid #333;
+}
+/* Back to the top button end */
+
+
+/* Flexbox */
+main {
+  display: flex;
+  flex-flow: wrap;
+}
+
+/* Media queries for 3 columns */
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 480px) and (orientation: portrait) {
+/* For mobile phone: */
+  .col-m-1 {width: 33.33%;}
+  .col-m-2 {width: 66.66%;}
+  .col-m-3 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+  /* For tablet: */
+  .col-m-1 {width: 33.33%;}
+  .col-m-2 {width: 66.66%;}
+  .col-m-3 {width: 100%;}
+}
+
+
+@media only screen and (min-width: 1024px) and (orientation: landscape) {
+/* For laptop/desktop: */
+  .col-1 {width: 33.33%;}
+  .col-2 {width: 66.66%;}
+  .col-3 {width: 100%;}
+}
+
+
+@media only screen and (max-width: 480px) {
+/* mobile phone */
+  .small {
+    display: none;
+    }
+  .menu td {
+    font-size: 10px;
+    }
+  #submit {
+    width: 100%; 
+    }
+  #submit2, #eSign {
+    width: 100%;
+    }
+  label, footer {
+    font-size: 12px;
+    }
+  fieldset {
+    padding: 10px;
+    }
+  #signForm {
+    padding: 20px;
+    }
+  /* About Us page order - Flexbox */
+  .order1 {order: 1;}
+  .order2 {order: 3;}
+  .order3 {order: 2;}
+  .order4 {order: 4;}
+}
+/* Media Queries */
